@@ -1,0 +1,32 @@
+IP = 60
+STACKPTR = 0080
+STACKCURRPTR = 0080
+FLAGEQ = 0080
+BEGINFUNC fib
+SET 3 0
+ADD 3 1
+ADD 3 2
+MOV 1 2
+MOV 2 3
+ADDN 4 1
+EQ 4 5 6
+PUSH 1
+PUSH 2
+PUSH 3
+PUSH 4
+PUSH 5
+START fib 5
+ENDFUNC fib
+n = 4
+num = 2
+ff = 1
+sf = 1
+re = 0
+PUSH ff
+PUSH sf
+PUSH re
+PUSH num
+PUSH n
+START fib 5
+OUT re
+STOP
